@@ -1,0 +1,82 @@
+@mixin boxed-heading () {
+  position: absolute;
+  padding: 13px 30px 7px;
+  font-family: $headings-ff;
+  left: -20px;
+  color: #fff;
+  background: $primary;
+  line-height: 0;
+  border: 2px dotted $primary;
+  bottom: 50px;
+  transition: $transition-default;
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+
+  h2 {
+    margin: 0;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $primary !important;
+    border-color: $primary !important;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  @include shadow();
+}
+
+@mixin dotted-border ($color) {
+  border: 6px solid transparent;
+
+  @if $color == 'black' {
+    -o-border-image: url("../img/dotround-border.svg") 33% round;
+    border-image: url("../img/dotround-border.svg") 33% round;
+  }
+
+  @else if $color == 'white' {
+    -o-border-image: url("../img/dotround-border-white.svg") 33% round;
+    border-image: url("../img/dotround-border-white.svg") 33% round;
+  }
+
+  @else {
+    -o-border-image: url("../img/dotround-border-orange.svg") 33% round;
+    border-image: url("../img/dotround-border-orange.svg") 33% round;
+  }
+}
+
+@mixin shadow() {
+  box-shadow: 3px 2px 19px 0 rgba(50, 50, 50, 0.83);
+}
+
+@mixin heading-dotted-border() {
+  @include shadow();
+
+  position: absolute;
+  font-family: $headings-ff;
+  background-color: $white;
+  text-align: left;
+  width: 40%;
+  top: -75px;
+  left: 10%;
+  padding: 35px 35px 25px;
+  z-index: 10;
+
+  h3 {
+    color: $primary;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: calc(100% - 12px);
+    width: calc(100% - 12px);
+    left: 6px;
+    top: 6px;
+    z-index: 0;
+
+    @include dotted-border('orange');
+  }
+}

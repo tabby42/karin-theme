@@ -1,3 +1,27 @@
+body {
+  font-family: $text-ff;
+  font-weight: 300;
+  overflow-x: hidden;
+  font-size: $base-fontsize;
+  line-height: 1.6;
+}
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $headings-ff;
+}
+
+h1 {
+  font-size: 2.4em;
+}
+
 a {
   color: red;
 }
