@@ -1,11 +1,16 @@
 <header class="banner">
  <div class="container-fluid">
-   <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-    <a class="navbar-brand" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}</a>
+   <nav class="navbar navbar-toggleable-md">
+    <a class="navbar-brand" href="{{ home_url('/') }}">
+      <img src="@asset('images/karin_logo-rgb.svg')" alt={{ get_bloginfo('name', 'display') }}>
+    </a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
    aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon">
+        <span class="ti-menu"></span>
+        <span class="icon-name"> menü</span>
+      </span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         @if (has_nav_menu('primary_navigation'))
