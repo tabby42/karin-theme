@@ -32,18 +32,18 @@
   border: 6px solid transparent;
 
   @if $color == 'black' {
-    -o-border-image: url("../img/dotround-border.svg") 33% round;
-    border-image: url("../img/dotround-border.svg") 33% round;
+    -o-border-image: url("../images/dotround-border.svg") 33% round;
+    border-image: url("../images/dotround-border.svg") 33% round;
   }
 
   @else if $color == 'white' {
-    -o-border-image: url("../img/dotround-border-white.svg") 33% round;
-    border-image: url("../img/dotround-border-white.svg") 33% round;
+    -o-border-image: url("../images/dotround-border-white.svg") 33% round;
+    border-image: url("../images/dotround-border-white.svg") 33% round;
   }
 
   @else {
-    -o-border-image: url("../img/dotround-border-orange.svg") 33% round;
-    border-image: url("../img/dotround-border-orange.svg") 33% round;
+    -o-border-image: url("../images/dotround-border-orange.svg") 33% round;
+    border-image: url("../images/dotround-border-orange.svg") 33% round;
   }
 }
 
