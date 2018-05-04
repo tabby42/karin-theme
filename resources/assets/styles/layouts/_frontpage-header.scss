@@ -1,0 +1,82 @@
+#fp-header {
+  height: 100vh;
+  background-image: url("../images/header_gross.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+  position: relative;
+
+  h1 {
+    position: absolute;
+    width: 60%;
+    top: 115px;
+    left: 30%;
+    z-index: 100;
+    transform: translateX(-50%);
+
+    span {
+      @include shadow();
+
+      position: absolute;
+      display: inline-block;
+      font-family: $headings-ff;
+      font-size: 1.75rem;
+      line-height: 1.2;
+      color: $black;
+      background-color: $white;
+      text-align: center;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 32px 40px 25px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        height: calc(100% - 12px);
+        width: calc(100% - 12px);
+        left: 6px;
+        top: 6px;
+        z-index: -1;
+
+        @include dotted-border('orange');
+      }
+
+      &.slogan-1 {
+        transform: rotate(2deg);
+        left: 40%;
+        margin-top: 7px;
+      }
+
+      &.slogan-2 {
+        margin-top: 89px;
+        left: 30%;
+        transform: rotate(-3deg);
+      }
+
+      &.slogan-3 {
+        margin-top: 163px;
+        left: 42%;
+        transform: rotate(-5deg);
+      }
+
+      &.slogan-4 {
+        margin-top: 246px;
+        left: 30%;
+        transform: rotate(-9deg);
+      }
+
+      &.slogan-5 {
+        margin-top: 314px;
+        left: 46%;
+        min-width: 200px;
+        transform: rotate(-4deg);
+      }
+
+      &.slogan-6 {
+        margin-top: 390px;
+        transform: rotate(2deg);
+        left: 41%;
+      }
+    }
+  }
+}
