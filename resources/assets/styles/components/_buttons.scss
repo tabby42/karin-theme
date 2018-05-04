@@ -1,0 +1,36 @@
+.btn.btn-primary {
+  @include boxed-heading();
+
+  border-radius: 0;
+  padding: 28px 35px 20px;
+  font-size: 24px;
+}
+
+.btn.btn-default {
+  font-family: $headings-ff;
+  color: $white;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 8px 30px 3px;
+  font-size: 20px;
+
+  @include dotted-border('white');
+
+  border-width: 5px;
+  transition: $transition-default;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $primary;
+    box-shadow: none;
+  }
+
+  &.btn-alt-hover {
+    &:hover,
+    &:focus,
+    &:active {
+      color: $black;
+    }
+  }
+}
