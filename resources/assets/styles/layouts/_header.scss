@@ -51,10 +51,15 @@
     margin-top: -25px;
   }
 
+  .nav-item {
+    width: 100%;
+  }
+
   .nav-link {
     color: $black;
     font-family: $headings-ff;
     font-size: 20px;
+    padding: 0.5rem 0 !important;
     padding-bottom: 0;
     transition: $transition-default;
 
@@ -80,18 +85,30 @@
     padding-top: 20px;
     padding-left: 3px;
 
+    .dropdown,
     .dropdown-menu {
       position: static;
       min-width: 100px;
+      width: 100%;
       font-family: $headings-ff;
       border: 0;
-      border-top: 2px dotted $black;
-      border-bottom: 2px dotted $black;
-      border-radius: 0;
       transition: $transition-default;
+
+      .dropdown-menu {
+        border-top: 2px dotted $black;
+        border-bottom: 2px dotted $black;
+        border-radius: 0;
+      }
+
+      .dropdown-toggle::after {
+        position: absolute;
+        margin-top: 12px;
+        margin-left: 0.5rem;
+      }
 
       .dropdown-item {
         transition: $transition-default;
+        padding: 0.25rem 1.5rem;
 
         &:hover,
         &:focus {
