@@ -23,3 +23,6 @@
    </nav>
  </div>
 </header>
+@if (is_front_page())
+    @include('partials.frontpage-header')
+@endif
