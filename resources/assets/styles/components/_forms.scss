@@ -17,3 +17,18 @@
   @extend .btn;
   @extend .btn-secondary;
 }
+
+.form-control {
+  border-radius: 0;
+  border: 0;
+  border-bottom: 2px dotted $black;
+  outline: 0;
+  font-family: $text-ff;
+  font-size: 12px;
+
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+    border-color: $primary;
+  }
+}
