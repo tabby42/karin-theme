@@ -1,0 +1,11 @@
+figure {
+  position: relative;
+  margin: 0;
+  padding: 3px;
+
+  @include dotted-border('orange');
+
+  figcaption {
+    @include boxed-heading();
+  }
+}

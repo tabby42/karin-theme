@@ -25,3 +25,24 @@ h1 {
 a {
   color: red;
 }
+
+.wrap.container-fluid {
+  padding-top: 5em;
+  padding-bottom: 8em;
+
+  @include media-breakpoint-up(xl) {
+    width: 80%;
+  }
+}
+
+.heading-container {
+  top: -50px;
+  text-align: center;
+  padding: 32px 20px 19px;
+
+  @include heading-dotted-border();
+
+  h3 {
+    color: $black;
+  }
+}
