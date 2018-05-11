@@ -25,7 +25,6 @@
     <div class="col-md-3">
       <img src="@asset('images/karin_logo-inverse.svg')" alt="Logo">
       <p>
-        Trautenauplatz 13/8<br>1190 Wien<br>
         <span>post@karin-theiss.com</span><br>
         <span>+43 1234 1234</span>
       </p>
