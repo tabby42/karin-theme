@@ -18,6 +18,7 @@
     </div>
     @php(do_action('get_footer'))
     @include('partials.footer')
+    @include('partials/modal')
     @php(wp_footer())
   </body>
 </html>

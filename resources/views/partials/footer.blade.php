@@ -3,6 +3,7 @@
     @php(dynamic_sidebar('sidebar-footer'))
   </div>
 </footer> --}}
+
 <footer>
   <div class="newsletter-container">
       <h3>newsletter</h3>
@@ -26,9 +27,10 @@
       <img src="@asset('images/karin_logo-inverse.svg')" alt="Logo">
       <p>
         <span>post@karin-theiss.com</span><br>
-        <span>+43 1234 1234</span>
+        <span>+43 699 11 55 36 82</span>
       </p>
-      <button type="button" class="btn btn-default">nachricht</button>
+      <button type="button" class="btn btn-default" data-toggle="modal" data-target="#kt-mail-modal">nachricht</button>
     </div>
   </div>
 </footer>
+
