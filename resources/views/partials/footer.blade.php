@@ -4,7 +4,7 @@
   </div>
 </footer> --}}
 
-<footer>
+<footer id="contact">
   <div class="newsletter-container">
       <h3>newsletter</h3>
       <form>

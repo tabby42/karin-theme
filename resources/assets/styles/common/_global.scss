@@ -20,22 +20,52 @@ h5 {
 
 h1 {
   font-size: 2.4em;
+  color: $primary;
 }
 
-a {
-  color: red;
+a:not(.navbar-brand):not(.nav-link) {
+  color: $primary;
+  border-bottom: 2px dotted $primary;
+  padding: 2px;
+  transition: $transition-default;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $white;
+    background-color: $primary;
+  }
+}
+
+b,
+strong {
+  font-weight: 400;
+  color: $primary;
+}
+
+em {
+  font-weight: 400;
 }
 
 .wrap.container-fluid {
   padding-top: 5em;
 }
 
-.row.boxed-row {
+body:not(.home) .wrap.container-fluid {
+  margin-top: 4em;
+}
+
+.row.boxed-row,
+.top-row {
   margin: 0 auto;
 
   @include media-breakpoint-up(md) {
     width: 80%;
   }
+}
+
+.orange-row {
+  background-color: $primary;
 }
 
 .col-spacer {

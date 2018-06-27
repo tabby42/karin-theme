@@ -76,6 +76,7 @@
     left: 6px;
     top: 6px;
     z-index: 0;
+    padding: 34px;
 
     @include dotted-border('orange');
   }
