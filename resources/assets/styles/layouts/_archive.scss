@@ -1,1 +1,26 @@
+body.archive .wrap.container-fluid {
+  background: $primary;
+  padding-top: 9em;
 
+  .main {
+    padding-bottom: 8em;
+  }
+
+  article.event {
+    @include heading-dotted-border();
+
+    position: relative;
+    top: auto;
+    left: 0;
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 4em;
+
+    .entry-summary {
+      font-family: $text-ff;
+      font-weight: 300;
+      font-size: $base-fontsize;
+      line-height: 1.6;
+    }
+  }
+}

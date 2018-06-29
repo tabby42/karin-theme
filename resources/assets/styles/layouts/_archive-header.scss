@@ -8,5 +8,12 @@
 
   h1 {
     @include heading-dotted-border();
+
+    color: $black;
+    width: 30%;
+    top: auto;
+    bottom: -60px;
+    text-align: center;
+    font-size: 1.75rem;
   }
 }
