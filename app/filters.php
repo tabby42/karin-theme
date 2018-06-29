@@ -68,3 +68,12 @@ add_filter('comments_template', function ($comments_template) {
     );
     return template_path(locate_template(["views/{$comments_template}", $comments_template]) ?: $comments_template);
 });
+
+/**
+ * Replace Archive Title
+ */
+function filter_archive_title($title) {
+    return str_replace('Archives: Events', 'termine', $title);
+}
+
+add_filter('get_the_archive_title', __NAMESPACE__ . '\\filter_archive_title');
