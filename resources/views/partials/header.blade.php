@@ -26,3 +26,6 @@
 @if (is_front_page())
     @include('partials.frontpage-header')
 @endif
+@if (is_archive())
+    @include('partials.archive-header')
+@endif
