@@ -1,0 +1,12 @@
+#archive-header {
+  height: 75vh;
+  background-image: url("../images/schuhe_karin.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
+  position: relative;
+
+  h1 {
+    @include heading-dotted-border();
+  }
+}
