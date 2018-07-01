@@ -5,6 +5,20 @@
   border-radius: 0;
   padding: 28px 35px 20px;
   font-size: 24px;
+
+  &.inverse {
+    color: $white;
+    background: $black;
+    border-color: $black !important;
+    left: auto;
+    right: -30px;
+    bottom: -15px;
+
+    &:hover,
+    &:focus {
+      background: $black !important;
+    }
+  }
 }
 
 .btn.btn-default {
