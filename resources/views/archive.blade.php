@@ -31,12 +31,17 @@
             </span>
           </span>
         </header>
+        <div class="text-right">
+          <button type="button" class="btn btn-primary btn-lg btn-details">details</button>
+        </div>
         <div class="entry-summary">
          {!! $event['content'] !!}
+          @if ($event['is_workshop'] == 1)
+            <div class="text-right">
+              <button type="button" class="btn btn-primary btn-lg inverse btn-workshop" data-toggle="modal" data-target="#kt-mail-modal">anmelden</button>
+            </div>
+          @endif
         </div>
-        @if ($event['is_workshop'] == 1)
-          <button type="button" class="btn btn-primary btn-lg inverse" data-toggle="modal" data-target="#kt-mail-modal">anmelden</button>
-        @endif
       </article>
     @endforeach
   </div>
