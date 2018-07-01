@@ -12,15 +12,23 @@
    @foreach ($event_loop as $event)
       <article @php(post_class())>
         <header>
-          <h2 class="entry-title">{{ get_the_title() }}</h2>
-          <span class="event-date">
-            {!! $event['event_date'] !!}
-          </span>
-          <span class="event-time">
-            {!! $event['event_time'] !!}
-          </span>
-          <span class="event-location">
-            {!! $event['location'] !!}
+          <h2 class="entry-title">{!! $event['title'] !!}
+          </h2>
+           <span class="badge badge-info">
+            <span class="event-date">
+              {!! $event['event_date'] !!}
+            </span>|
+            <span class="event-time">
+              {!! $event['event_time'] !!}
+            </span>
+          </span><br>
+           <span class="badge badge-info">
+            <span class="event-location">
+              {!! $event['location'] !!}
+            </span><br>
+            <span class="event-address">
+              {!! $event['address'] !!}
+            </span>
           </span>
         </header>
         <div class="entry-summary">
