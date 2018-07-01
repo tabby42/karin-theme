@@ -7,11 +7,30 @@
     </div>
     {!! get_search_form(false) !!}
   @endif
-
+  {{-- @php(var_dump($event_loop) ) --}}
   <div class="row boxed-row">
-    @while (have_posts()) @php(the_post())
-      @include('partials.content-'.get_post_type())
-    @endwhile
+   @foreach ($event_loop as $event)
+      <article @php(post_class())>
+        <header>
+          <h2 class="entry-title">{{ get_the_title() }}</h2>
+          <span class="event-date">
+            {!! $event['event_date'] !!}
+          </span>
+          <span class="event-time">
+            {!! $event['event_time'] !!}
+          </span>
+          <span class="event-location">
+            {!! $event['location'] !!}
+          </span>
+        </header>
+        <div class="entry-summary">
+         {!! $event['content'] !!}
+        </div>
+        @if ($event['is_workshop'] == 1)
+          <button type="button" class="btn btn-primary btn-lg inverse" data-toggle="modal" data-target="#kt-mail-modal">anmelden</button>
+        @endif
+      </article>
+    @endforeach
   </div>
  
   {!! get_the_posts_navigation() !!}
