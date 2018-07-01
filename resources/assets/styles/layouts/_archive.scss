@@ -1,6 +1,6 @@
 body.archive .wrap.container-fluid {
   background: $primary;
-  padding-top: 9em;
+  padding-top: 6em;
 
   .main {
     padding-bottom: 8em;
@@ -12,9 +12,9 @@ body.archive .wrap.container-fluid {
     position: relative;
     top: auto;
     left: 0;
-    width: 75%;
+    width: 60%;
     margin: 0 auto;
-    margin-bottom: 4em;
+    margin-bottom: 3em;
 
     header {
       position: relative;
@@ -29,8 +29,8 @@ body.archive .wrap.container-fluid {
     }
 
     .entry-title {
+      font-weight: bold;
       font-size: 1.75rem;
-      color: $primary;
 
       p {
         margin-bottom: 0;
@@ -47,10 +47,6 @@ body.archive .wrap.container-fluid {
       padding: 0;
       text-align: left;
       line-height: 1.6;
-
-      .event-location {
-        text-transform: uppercase;
-      }
 
       .event-address {
         font-weight: 400;

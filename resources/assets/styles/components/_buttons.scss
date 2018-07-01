@@ -10,13 +10,26 @@
     color: $white;
     background: $black;
     border-color: $black !important;
-    left: auto;
-    right: -30px;
-    bottom: -15px;
+    position: static;
+    transform: rotate(0);
+    box-shadow: none;
+
+    &:hover,
+    &:focus {
+      background: $primary !important;
+      border-color: $primary !important;
+    }
+  }
+
+  &.btn-details {
+    position: static;
+    transform: rotate(0);
+    box-shadow: none;
 
     &:hover,
     &:focus {
       background: $black !important;
+      border-color: $black !important;
     }
   }
 }
