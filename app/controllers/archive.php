@@ -1,0 +1,26 @@
+<?php
+
+namespace App;
+
+use Sober\Controller\Controller;
+
+class Archive extends Controller
+{
+    public function eventLoop()
+    {
+        $event_items = get_posts([
+            'post_type' => 'event',
+            'posts_per_page'=>'10',
+        ]);
+    
+        return array_map(function ($post) {
+            return [
+                'content' => apply_filters('the_content', $post->post_content),
+                'event_date' =>  date_format(date_create(get_post_meta($post->ID, 'event_date', true )), 'd.m.Y'),
+                'event_time' => get_post_meta($post->ID, 'event_time', true ),
+                'location' => get_post_meta($post->ID, 'location', true ),
+                'is_workshop' => get_post_meta($post->ID, 'is_workshop', true ),
+            ];
+        }, $event_items);
+    }
+}
