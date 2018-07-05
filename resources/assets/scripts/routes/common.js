@@ -6,7 +6,7 @@ export default {
 
     eventSummary.hide();
     btnDetail.on("click", function() {
-      $(this).parent().parent().find(".entry-summary").slideToggle(1000);
+      $(this).parent().parent().find(".entry-summary").slideToggle(500);
     });
   },
   finalize() {
