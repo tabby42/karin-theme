@@ -22,6 +22,7 @@ class Archive extends Controller
                 'location' => get_post_meta($post->ID, 'location', true ),
                 'address' => get_post_meta($post->ID, 'event_address', true ),
                 'is_workshop' => get_post_meta($post->ID, 'is_workshop', true ),
+                'price' => get_post_meta($post->ID, 'event_price', true ),
             ];
         }, $event_items);
     }
