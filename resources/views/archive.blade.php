@@ -19,15 +19,24 @@
               {!! $event['event_date'] !!}
             </span>|
             <span class="event-time">
-              {!! $event['event_time'] !!}
+              {!! $event['event_time'] !!} Uhr
             </span>
           </span><br>
-           <span class="badge badge-info">
+          <span class="badge badge-info">
             <span class="event-location">
               {!! $event['location'] !!}
             </span><br>
             <span class="event-address">
               {!! $event['address'] !!}
+            </span><br>
+            <span class="event-price">
+            @if ($event['is_workshop'] == 1)
+              <b>Kosten: </b>
+            @endif
+             @if ($event['is_workshop'] == 0)
+              <b>Eintritt: </b>
+            @endif
+              {!! $event['price'] !!} €
             </span>
           </span>
         </header>
