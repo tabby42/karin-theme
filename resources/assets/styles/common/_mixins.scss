@@ -81,3 +81,32 @@
     @include dotted-border('orange');
   }
 }
+
+@mixin heading-dotted-border-black() {
+  position: absolute;
+  font-family: $headings-ff;
+  background-color: $white;
+  text-align: left;
+  width: 40%;
+  top: -75px;
+  left: 10%;
+  padding: 35px 35px 25px;
+  z-index: 10;
+
+  h3 {
+    color: $primary;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: calc(100% - 12px);
+    width: calc(100% - 12px);
+    left: 6px;
+    top: 6px;
+    z-index: 0;
+    padding: 34px;
+
+    @include dotted-border('black');
+  }
+}

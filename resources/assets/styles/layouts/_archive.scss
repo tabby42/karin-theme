@@ -1,13 +1,15 @@
 body.archive .wrap.container-fluid {
-  background: $primary;
+  // background: $primary;
   padding-top: 6em;
+  padding-left: 0;
+  padding-right: 0;
 
   .main {
     padding-bottom: 8em;
   }
 
   article.event {
-    @include heading-dotted-border();
+    @include heading-dotted-border-black();
 
     position: relative;
     top: auto;
@@ -31,6 +33,7 @@ body.archive .wrap.container-fluid {
     .entry-title {
       font-weight: bold;
       font-size: 1.75rem;
+      color: $primary;
 
       p {
         margin-bottom: 0;

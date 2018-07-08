@@ -7,18 +7,26 @@
   // position: relative;
 
   &.row.boxed-row {
-    width: 90%;
-    padding-top: 100px;
+    width: 100%;
+    background: $primary;
+    padding: 100px 40px 50px;
+    position: relative;
   }
 
   h1 {
     @include heading-dotted-border();
 
     color: $black;
-    width: 30%;
+    width: 200px;
     top: auto;
-    bottom: -60px;
+    left: -30px;
+    bottom: 40px;
     text-align: center;
     font-size: 1.75rem;
+    transform: rotate(-5deg);
+  }
+
+  figure {
+    border: 12px solid $white;
   }
 }
