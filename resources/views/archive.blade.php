@@ -8,7 +8,7 @@
     {!! get_search_form(false) !!}
   @endif
   {{-- @php(var_dump($event_loop) ) --}}
-  <div class="row boxed-row">
+  <div class="row">
    @foreach ($event_loop as $event)
       <article @php(post_class())>
         <header>
