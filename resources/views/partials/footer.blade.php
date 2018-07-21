@@ -7,17 +7,12 @@
 <footer id="contact">
   <div class="newsletter-container">
       <h3>newsletter</h3>
-      <form>
-        <div class="form-group">
-          <input type="email" class="form-control" name="" value="" placeholder="E-Mail">
-        </div>
-        <button type="submit" class="btn btn-primary btn-lg">anmelden</button>
-      </form>
+      <?php echo do_shortcode( '[mc4wp_form id="75"]' )?>
   </div>
   <div class="row">
-    <div class="col-md-3">
-
-    </div>
+    <div class="col-md-3 footer-col">
+      <a href="#" class="nav-link footer-link">Impressum</a>
+    </div>  
     <div class="col-md-3">
 
     </div>
