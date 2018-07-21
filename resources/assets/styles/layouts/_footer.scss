@@ -43,5 +43,26 @@ footer {
     form {
       position: relative;
     }
+
+    p {
+      font-family: $text-ff;
+      color: $black;
+    }
+  }
+
+  .footer-col {
+    position: relative;
+
+    .footer-link {
+      position: absolute;
+      bottom: 0;
+      color: $white;
+      padding: 2px;
+      border-bottom: 1px dotted $white;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
   }
 }
