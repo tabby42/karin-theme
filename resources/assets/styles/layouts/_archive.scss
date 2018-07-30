@@ -10,6 +10,7 @@ body.archive .wrap.container-fluid {
 
   article.event {
     @include heading-dotted-border-black();
+    @include shadow();
 
     position: relative;
     top: auto;
@@ -54,6 +55,17 @@ body.archive .wrap.container-fluid {
       .event-address {
         font-weight: 400;
         font-size: 14px;
+      }
+    }
+
+    .event-icon {
+      position: relative;
+
+      img {
+        width: 50px;
+        position: absolute;
+        top: -50px;
+        right: -10px;
       }
     }
   }
