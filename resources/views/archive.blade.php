@@ -44,8 +44,8 @@
                 {!! $event['price'] !!} €
             </span>
           </span><br>
-          <span><img src="@asset('images/location-pin-orange.svg')" alt="Location Pin Icon"/></span>
-          <span class="badge badge-info">
+          <span class="location-pin"><img src="@asset('images/location-pin-orange.svg')" alt="Location Pin Icon"/></span>
+          <span class="badge badge-info pad-left">
             <span class="event-location">
               {!! $event['location'] !!}
             </span><br>
