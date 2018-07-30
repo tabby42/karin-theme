@@ -14,13 +14,25 @@
         <header>
           <h2 class="entry-title">{!! $event['title'] !!}
           </h2>
-           <span class="badge badge-info">
+          {{-- icons --}}
+          @if ($event['is_workshop'] == 1)
+            <div class="text-right event-icon">
+              <img src="@asset('images/icon_kurs.svg')"/>
+            </div>
+          @endif
+          @if ($event['is_workshop'] == 0)
+            <div class="text-right event-icon">
+              <img src="@asset('images/icon_theater.svg')"/>
+            </div>
+          @endif
+          {{-- event info --}}
+          <span class="badge badge-info">
             <span class="event-date">
               {!! $event['event_date'] !!}
             </span>|
             <span class="event-time">
               {!! $event['event_time'] !!} Uhr
-            </span>
+          </span>
           </span><br>
           <span class="badge badge-info">
             <span class="event-location">
@@ -43,6 +55,7 @@
         <div class="text-right">
           <button type="button" class="btn btn-primary btn-lg btn-details">details</button>
         </div>
+        {{-- event-details --}}
         <div class="entry-summary">
          {!! $event['content'] !!}
           @if ($event['is_workshop'] == 1)
