@@ -2,7 +2,7 @@
  <div class="container-fluid">
    <nav class="navbar navbar-toggleable-md">
     <a class="navbar-brand" href="{{ home_url('/') }}">
-      <img src="@asset('images/karin_logo-rgb.svg')" alt={{ get_bloginfo('name', 'display') }}>
+      <img src="@asset('images/karin_clownin_lehrerin.svg')" alt={{ get_bloginfo('name', 'display') }}>
     </a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"

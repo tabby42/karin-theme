@@ -19,7 +19,7 @@
     <div class="col-md-3">
     </div>
     <div class="col-md-3 footer-col footer-flex">
-      <img src="@asset('images/karin_logo-inverse.svg')" alt="Logo">
+      <img src="@asset('images/karin_clownin_lehrerin_inverse.svg')" alt="Logo">
       <p>
         <span><em>T&emsp;</em>  post@karin-theiss.com</span><br>
         <span><em>E&emsp;</em>  +43 699 11 55 36 82</span><br>
