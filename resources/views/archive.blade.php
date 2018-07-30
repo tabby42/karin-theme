@@ -12,28 +12,39 @@
    @foreach ($event_loop as $event)
       <article @php(post_class())>
         <header>
-          <h2 class="entry-title">{!! $event['title'] !!}
-          </h2>
           {{-- icons --}}
           @if ($event['is_workshop'] == 1)
-            <div class="text-right event-icon">
-              <img src="@asset('images/icon_kurs.svg')"/>
-            </div>
+            <span class="event-icon">
+              <img src="@asset('images/icon_kurs.svg')" alt="Theater Icon"/>
+            </span>
           @endif
           @if ($event['is_workshop'] == 0)
-            <div class="text-right event-icon">
-              <img src="@asset('images/icon_theater.svg')"/>
-            </div>
+            <span class="event-icon">
+              <img src="@asset('images/icon_theater.svg')" alt="Kurs Icon"/>
+            </span>
           @endif
+          {{-- heading --}}
+          <h2 class="entry-title">{!! $event['title'] !!}
+          </h2>
           {{-- event info --}}
           <span class="badge badge-info">
             <span class="event-date">
               {!! $event['event_date'] !!}
-            </span>|
+            </span>
             <span class="event-time">
               {!! $event['event_time'] !!} Uhr
-          </span>
+            </span>
+            <span class="event-price">
+              @if ($event['is_workshop'] == 1)
+                Kosten&ensp; 
+              @endif
+              @if ($event['is_workshop'] == 0)
+                Eintritt&ensp; 
+              @endif
+                {!! $event['price'] !!} €
+            </span>
           </span><br>
+          <span><img src="@asset('images/location-pin-orange.svg')" alt="Location Pin Icon"/></span>
           <span class="badge badge-info">
             <span class="event-location">
               {!! $event['location'] !!}
@@ -41,18 +52,9 @@
             <span class="event-address">
               {!! $event['address'] !!}
             </span><br>
-            <span class="event-price">
-            @if ($event['is_workshop'] == 1)
-              <b>Kosten: </b>
-            @endif
-             @if ($event['is_workshop'] == 0)
-              <b>Eintritt: </b>
-            @endif
-              {!! $event['price'] !!} €
-            </span>
           </span>
         </header>
-        <div class="text-right">
+        <div class="text-right position-relative">
           <button type="button" class="btn btn-primary btn-lg btn-details">details</button>
         </div>
         {{-- event-details --}}
