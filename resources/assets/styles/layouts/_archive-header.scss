@@ -11,6 +11,7 @@
     background: $primary;
     padding: 100px 40px 50px;
     position: relative;
+    height: 100vh;
   }
 
   h1 {
@@ -20,7 +21,7 @@
     width: 200px;
     top: auto;
     left: -30px;
-    bottom: 40px;
+    bottom: 65px;
     text-align: center;
     font-size: 1.75rem;
     transform: rotate(-5deg);

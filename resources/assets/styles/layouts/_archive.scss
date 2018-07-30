@@ -16,11 +16,13 @@ body.archive .wrap.container-fluid {
     top: auto;
     left: 0;
     width: 60%;
+    padding: 35px 35px 30px;
     margin: 0 auto;
-    margin-bottom: 3em;
+    margin-bottom: 5em;
 
     header {
       position: relative;
+      margin-top: 10px;
     }
 
     .entry-summary {
@@ -28,13 +30,14 @@ body.archive .wrap.container-fluid {
       font-weight: 300;
       font-size: $base-fontsize;
       line-height: 1.6;
-      padding-top: 2.5em;
+      padding-top: 4.5em;
     }
 
     .entry-title {
-      font-weight: bold;
-      font-size: 1.75rem;
-      color: $primary;
+      font-size: 2rem;
+      color: $black;
+      margin-bottom: 15px;
+      padding-left: 60px;
 
       p {
         margin-bottom: 0;
@@ -47,7 +50,7 @@ body.archive .wrap.container-fluid {
       color: $black;
       border-radius: 0;
       font-size: 0.85rem;
-      font-weight: 700;
+      font-weight: 400;
       padding: 0;
       text-align: left;
       line-height: 1.6;
@@ -64,9 +67,26 @@ body.archive .wrap.container-fluid {
       img {
         width: 50px;
         position: absolute;
-        top: -50px;
-        right: -10px;
+        top: -10px;
+        left: 0;
       }
+    }
+
+    .event-date,
+    .event-time,
+    .event-price {
+      background: $primary;
+      color: #fff;
+      padding: 3px 10px;
+      display: inline-block;
+      margin-right: 5px;
+      margin-bottom: 10px;
+      border-left: 4px solid $black;
+    }
+
+    .event-location {
+      font-weight: 700;
+      font-size: 1.1em;
     }
   }
 }

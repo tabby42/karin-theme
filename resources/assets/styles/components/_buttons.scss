@@ -22,9 +22,12 @@
   }
 
   &.btn-details {
-    position: static;
-    transform: rotate(0);
-    box-shadow: none;
+    position: absolute;
+    right: -60px;
+    left: auto;
+    bottom: -40px;
+    padding-left: 45px;
+    padding-right: 45px;
 
     &:hover,
     &:focus {
