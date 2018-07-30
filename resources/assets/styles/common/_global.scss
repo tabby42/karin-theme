@@ -24,16 +24,15 @@ h1 {
 }
 
 p a {
-  color: $primary;
-  border-bottom: 2px dotted $primary !important;
+  color: $black;
+  border-bottom: 1px dotted $primary !important;
   padding: 2px;
   transition: $transition-default;
 
   &:hover,
   &:focus {
     text-decoration: none;
-    color: $white;
-    background-color: $primary;
+    color: $primary;
   }
 }
 
