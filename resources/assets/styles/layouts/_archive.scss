@@ -1,8 +1,8 @@
 body.archive .wrap.container-fluid {
   // background: $primary;
   padding-top: 6em;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 5%;
+  padding-right: 5%;
 
   .main {
     padding-bottom: 8em;
@@ -16,9 +16,10 @@ body.archive .wrap.container-fluid {
     top: auto;
     left: 0;
     width: 60%;
-    padding: 35px 35px 30px;
+    padding: 35px 35px 40px;
     margin: 0 auto;
     margin-bottom: 5em;
+    max-width: 700px;
 
     header {
       position: relative;
@@ -34,10 +35,13 @@ body.archive .wrap.container-fluid {
     }
 
     .entry-title {
-      font-size: 2rem;
+      font-size: 1.75rem;
       color: $black;
+      margin-top: 10px;
       margin-bottom: 20px;
       padding-left: 65px;
+      word-break: break-all;
+      white-space: normal;
 
       p {
         margin-bottom: 0;
@@ -54,6 +58,8 @@ body.archive .wrap.container-fluid {
       padding: 0;
       text-align: left;
       line-height: 1.6;
+      word-break: break-all;
+      white-space: normal;
 
       .event-address {
         font-weight: 400;
@@ -72,7 +78,7 @@ body.archive .wrap.container-fluid {
       img {
         width: 55px;
         position: absolute;
-        top: -10px;
+        top: 2px;
         left: 0;
       }
     }
