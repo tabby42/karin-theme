@@ -31,19 +31,24 @@
             <span class="event-date">
               {!! $event['event_date'] !!}
             </span>
+          </span>
+          <span class="badge badge-info">
             <span class="event-time">
               {!! $event['event_time'] !!} Uhr
             </span>
+          </span>
+          <span class="badge badge-info">
             <span class="event-price">
               @if ($event['is_workshop'] == 1)
-                Kosten&ensp; 
+                Kosten:&nbsp;
               @endif
               @if ($event['is_workshop'] == 0)
-                Eintritt&ensp; 
+                Eintritt:&nbsp;
               @endif
-                {!! $event['price'] !!} €
+                {!! $event['price'] !!}
             </span>
-          </span><br>
+          </span>
+          <br>
           <span class="location-pin"><img src="@asset('images/location-pin-orange.svg')" alt="Location Pin Icon"/></span>
           <span class="badge badge-info pad-left">
             <span class="event-location">
