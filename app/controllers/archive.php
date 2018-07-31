@@ -17,7 +17,8 @@ class Archive extends Controller
             return [
                 'content' => apply_filters('the_content', $post->post_content),
                 'title' => apply_filters('the_content', $post->post_title),
-                'event_date' =>  date_format(date_create(get_post_meta($post->ID, 'event_date', true )), 'd.m.Y'),
+                // 'event_date' =>  date_format(date_create(get_post_meta($post->ID, 'event_date', true )), 'd.m.Y'),
+                'event_date' => get_post_meta($post->ID, 'event_date', true ),
                 'event_time' => get_post_meta($post->ID, 'event_time', true ),
                 'location' => get_post_meta($post->ID, 'location', true ),
                 'address' => get_post_meta($post->ID, 'event_address', true ),
