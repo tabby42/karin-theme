@@ -46,6 +46,10 @@ body.archive .wrap.container-fluid {
       p {
         margin-bottom: 0;
       }
+
+      @include media-breakpoint-down(xs) {
+        font-size: 1.55rem;
+      }
     }
 
     .badge.badge-info {
@@ -108,7 +112,8 @@ body.archive .wrap.container-fluid {
         width: 32px;
         height: 35px;
         position: absolute;
-        top: -23px;
+        top: 0;
+        left: -40px;
       }
     }
 
@@ -118,6 +123,7 @@ body.archive .wrap.container-fluid {
 
     @include media-breakpoint-down(xs) {
       width: 90%;
+      padding: 25px 25px 30px;
     }
   }
 }

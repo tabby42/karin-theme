@@ -81,16 +81,6 @@
 
     @include dotted-border('orange');
   }
-
-  @include media-breakpoint-down(sm) {
-    width: 60%;
-  }
-
-  @include media-breakpoint-down(xs) {
-    width: 300px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 }
 
 @mixin heading-dotted-border-black() {

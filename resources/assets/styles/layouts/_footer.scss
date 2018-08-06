@@ -67,6 +67,8 @@ footer {
 
     @include media-breakpoint-down(sm) {
       width: 300px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
