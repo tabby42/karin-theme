@@ -18,7 +18,8 @@
       <p>
         <span><em>T&emsp;</em>post@karin-theiss.com</span><br>
         <span><em>E&emsp;</em>+43 699 11 55 36 82</span><br>
-        <span><a class="footer-link position-st" href="https://www.facebook.com/profile.php?id=100013285934303" target="_blank"><em>F&emsp;</em>  die clownin auf facebook</a></span>
+        <span><em>F&emsp;</em><a class="footer-link position-st" href="https://www.facebook.com/profile.php?id=100013285934303" target="_blank">die clownin auf facebook</a></span><br>
+        <span><em>Y&emsp;</em><a class="footer-link position-st" href="https://www.youtube.com/channel/UCUBeuACil9zkncchfBg9UXw " target="_blank">... und auf youtube</a></span>
       </p>
       <button type="button" class="btn btn-default" data-toggle="modal" data-target="#kt-mail-modal">nachricht</button>
     </div>
