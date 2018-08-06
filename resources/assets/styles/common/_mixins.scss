@@ -29,7 +29,8 @@
 }
 
 @mixin dotted-border ($color) {
-  border: 6px solid transparent;
+  border-style: dotted;
+  border-width: 6px;
 
   @if $color == 'black' {
     -o-border-image: url("../images/dotround-border.svg") 33% round;
@@ -79,6 +80,16 @@
     padding: 34px;
 
     @include dotted-border('orange');
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 60%;
+  }
+
+  @include media-breakpoint-down(xs) {
+    width: 300px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 

@@ -47,7 +47,8 @@
 
   @include dotted-border('white');
 
-  border-width: 5px;
+  // border-width: 5px;
+  border-color: $white;
   transition: $transition-default;
 
   &:hover,

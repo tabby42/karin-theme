@@ -61,6 +61,10 @@ body:not(.home):not(.archive) .wrap.container-fluid {
   @include media-breakpoint-up(md) {
     width: 80%;
   }
+
+  @include media-breakpoint-down(md) {
+    width: 95%;
+  }
 }
 
 .orange-row {
@@ -70,6 +74,10 @@ body:not(.home):not(.archive) .wrap.container-fluid {
 
 .col-spacer {
   height: 70px;
+
+  @include media-breakpoint-down(sm) {
+    height: 40px;
+  }
 }
 
 .heading-container {

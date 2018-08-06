@@ -13,8 +13,8 @@
   z-index: 100;
   top: 40px;
   left: 40px;
-  width: 320px;
-  padding: 25px 32px;
+  width: 300px;
+  padding: 22px 27px;
   background-color: $white;
   transition: $transition-default;
 
@@ -73,7 +73,7 @@
     content: '';
     position: absolute;
     height: calc(100% - 12px);
-    width: 308px;
+    width: 288px;
     left: 6px;
     top: 6px;
     z-index: -1;
@@ -117,5 +117,14 @@
         }
       }
     }
+  }
+
+  @include media-breakpoint-down(xs) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (max-width: 360px) {
+    top: 3%;
   }
 }

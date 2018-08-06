@@ -111,5 +111,13 @@ body.archive .wrap.container-fluid {
         top: -23px;
       }
     }
+
+    @include media-breakpoint-down(md) {
+      width: 80%;
+    }
+
+    @include media-breakpoint-down(xs) {
+      width: 90%;
+    }
   }
 }

@@ -9,4 +9,8 @@ figure.image-bordered,
   figcaption {
     @include boxed-heading();
   }
+
+  @include media-breakpoint-only(sm) {
+    margin: 0 50px;
+  }
 }
