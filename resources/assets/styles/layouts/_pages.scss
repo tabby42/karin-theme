@@ -14,3 +14,9 @@ figure.image-bordered,
     margin: 0 50px;
   }
 }
+
+.vc_empty_space {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}

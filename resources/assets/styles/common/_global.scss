@@ -51,7 +51,11 @@ em {
 }
 
 body:not(.home):not(.archive) .wrap.container-fluid {
-  margin-top: 8em;
+  margin-top: 5em;
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 8em;
+  }
 }
 
 .row.boxed-row,

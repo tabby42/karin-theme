@@ -20,8 +20,8 @@ footer {
 
     border-width: 5px;
     border-top: 0;
-    border-left: 0;
-    border-right: 0;
+    border-left: 0 !important;
+    border-right: 0 !important;
     margin-bottom: 8px;
   }
 
@@ -65,7 +65,7 @@ footer {
       color: $black;
     }
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(xs) {
       width: 300px;
       left: 50%;
       transform: translateX(-50%);
@@ -80,7 +80,7 @@ footer {
       position: absolute;
       bottom: 0;
       color: $white;
-      padding: 2px;
+      padding: 1px;
       border-bottom: 1px dotted $white !important;
 
       &:hover {
@@ -95,6 +95,14 @@ footer {
         position: static;
         display: inline-block;
       }
+    }
+
+    span > em {
+      padding-right: 10px;
+    }
+
+    &:not(.footer-flex) {
+      z-index: 100;
     }
 
     @include media-breakpoint-down(xs) {

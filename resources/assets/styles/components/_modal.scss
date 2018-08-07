@@ -27,6 +27,11 @@
     margin-bottom: -110px;
     outline: 0;
     cursor: pointer;
+
+    @include media-breakpoint-down(xs) {
+      right: -6px;
+      margin-bottom: -122px;
+    }
   }
 
   .nf-error .ninja-forms-field {
@@ -39,5 +44,9 @@
 
   .nf-form-fields-required {
     display: none;
+  }
+
+  .label-below .field-wrap {
+    flex-wrap: nowrap;
   }
 }
